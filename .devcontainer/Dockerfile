@@ -4,23 +4,17 @@
 ARG VARIANT="3"
 FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 
-# [Option] Install Node.js
-# ARG INSTALL_NODE="true"
-# ARG NODE_VERSION="lts/*"
-# RUN if [ "${INSTALL_NODE}" = "true" ]; then su vscode -c "source /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
-
+# Update pip
 RUN pip3 install --upgrade pip
 
-# [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
+# Install additional pip packages. Add packages to requirements.txt
 COPY requirements.txt /tmp/pip-tmp/
 RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
    && rm -rf /tmp/pip-tmp
 
-# [Optional] Uncomment this section to install additional OS packages.
+# Install additional OS packages.
+# 'ffmpeg', 'libsm6' and 'libxext6' are required by OpenCV
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends 'ffmpeg' \
     'libsm6'\ 
     'libxext6'
-
-# [Optional] Uncomment this line to install global node packages.
-# RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
