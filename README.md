@@ -8,11 +8,11 @@ It is based in mcr.microsoft.com/vscode/devcontainers/python
 
 ## How to get it running
 1. Install Docker Desktop ([download][1])
-2. Install MS Visual Source Code ([download][2])
-3. Clone ricardojamaia/ml-python-container GitHub repository
-  1. View -> Command Pallete ...
-  2. Type and select 'Git Clone'
-  3. Enter 'https://github.com/ricardojamaia/ml-python-container.git'
+1. Install MS Visual Source Code ([download][2])
+1. Clone ricardojamaia/ml-python-container GitHub repository
+    1. View -> Command Pallete ...
+    1. Type and select 'Git Clone'
+    1. Enter 'https://github.com/ricardojamaia/ml-python-container.git'
   4. VS Code will prompt you to open the repository
 4. Open repository in VS Code
 5. Install 'Remote - Containers' VS Code extension
