@@ -10,18 +10,18 @@ It is based in mcr.microsoft.com/vscode/devcontainers/python
 1. Install Docker Desktop ([download][1])
 2. Install MS Visual Source Code ([download][2])
 3. Clone ricardojamaia/ml-python-container GitHub repository
-  3.1. View -> Command Pallete ...
-  3.2. Type and select 'Git Clone'
-  3.3. Enter 'https://github.com/ricardojamaia/ml-python-container.git'
-  3.4. VS Code will prompt you to open the repository
+  1. View -> Command Pallete ...
+  2. Type and select 'Git Clone'
+  3. Enter 'https://github.com/ricardojamaia/ml-python-container.git'
+  4. VS Code will prompt you to open the repository
 4. Open repository in VS Code
 5. Install 'Remote - Containers' VS Code extension
-  5.1. VS Code will propmt you to install the recommended extensions i.e. Remote - Containers (ms-vscode-remote.remote-containers)
-  5.2. If necessary search it manually on marketplace
-  5.3. Click on install
+  1. VS Code will propmt you to install the recommended extensions i.e. Remote - Containers (ms-vscode-remote.remote-containers)
+  2. If necessary search it manually on marketplace
+  3. Click on install
 6. Reopen in Container
-  6.1. VS Code will detect a .devcontainer folder and prompt you to reopen the folder in container
-  6.2. Reopen folder in container
+  1. VS Code will detect a .devcontainer folder and prompt you to reopen the folder in container
+  2. Reopen folder in container
   
 That's it you should be able to start coding. An main.py file is provided by default.
 
