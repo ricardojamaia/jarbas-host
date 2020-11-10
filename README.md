@@ -1,10 +1,24 @@
 # Machine Learning Python Container
 This project provides the basis for starting a machine learning project using Remote-Containers in MS Visual Source Code.
-The following packages are installed by default:
-- Tensorflow 2
-- OpenCV 3
+Several machine learning related packages are installed by default:
+- [Numpy][1]: a porwerfull and well known general-purpose array-processing and scientic computing package.
+- [Matplotlib][2]: a comprehensive library for creating static, animated, and interactive visualizations in Python.
+- [Tensorflow 2][3]: an open source machine learning framework developed by Google Brain.
+- [Scikit-learn][4]: an open source machine learning framework.
+- [Pytorch][5]: an open source machine learning framework.
+- [Pandas][6]: a fast, powerful, flexible and easy to use open source data analysis and manipulation tool.
 
-It is based in mcr.microsoft.com/vscode/devcontainers/python
+The base container relies on mcr.microsoft.com/vscode/devcontainers/python
+
+## Benefits
+Easily start a Python machine learning project without the hassle of configuring a development environment. This containers provides:
+- Application source and test directories and initial files
+- VSC extensions installation (on remote container) and configuration
+- Testing and code coverage framework
+
+You may customize your environment by updating Dockerfile, installed Python packages (requirements.txt) of VSC settings.
+
+If you mess up your environment don't worry. Just rebuild the container.
 
 ## How to get it running
 1. Install Docker Desktop ([download][1])
@@ -23,9 +37,13 @@ It is based in mcr.microsoft.com/vscode/devcontainers/python
     1. VS Code will detect a .devcontainer folder and prompt you to reopen the folder in container
     1. Reopen folder in container
   
-That's it you should be able to start coding. An main.py file is provided by default.
+That's it you should be able to start coding.
 
-
-
-[1]: https://www.docker.com/products/docker-desktop
-[2]: https://code.visualstudio.com/download
+[1]: https://numpy.org/
+[2]: https://matplotlib.org/
+[3]: https://www.tensorflow.org/
+[4]: http://scikit-learn.org
+[5]: https://pytorch.org/
+[6]: https://pandas.pydata.org/
+[7]: https://www.docker.com/products/docker-desktop
+[8]: https://code.visualstudio.com/download
