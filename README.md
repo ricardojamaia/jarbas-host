@@ -21,8 +21,8 @@ You may customize your environment by updating Dockerfile, installed Python pack
 If you mess up your environment don't worry. Just rebuild the container.
 
 ## How to get it running
-1. Install Docker Desktop ([download][1])
-1. Install MS Visual Source Code ([download][2])
+1. Install Docker Desktop ([download][7])
+1. Install MS Visual Source Code ([download][8])
 1. Clone ricardojamaia/ml-python-container GitHub repository
     1. View -> Command Pallete ...
     1. Type and select 'Git Clone'
